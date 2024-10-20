@@ -1,0 +1,145 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 1rem;
+}
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2.2rem;
+    margin-top: -1rem;
+}
+
+/* Move the heading to the top of the page */
+body > h2 {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: #f9ba60; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #f9ba60; 
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f9ba60; 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f9ba60;
+}
+
+/* Error message styling */
+.error-message {
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin: 0 auto 1rem auto;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+form > .error-message {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+form > p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+a {
+    color: #f9ba60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e68a2e;
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+
+/* Responsive design */
+@media (max-width: 500px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    button {
+        font-size: 1.4rem;
+    }
+
+    body > h2 {
+        font-size: 2.5rem;
+    }
+}

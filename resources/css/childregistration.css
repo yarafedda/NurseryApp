@@ -1,0 +1,153 @@
+:root{
+    --orange:#f9ba60;
+    --pink:#e9768f;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+}
+
+
+
+
+header{
+    display: flex; 
+    justify-content: space-between;
+     align-items: center;
+   
+
+}
+
+header h1{
+    padding-left: 33rem;
+    color: var(--orange);
+}
+
+
+.home-icon {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+}
+
+.home-icon:hover {
+    color: var(--orange); 
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    padding-right: 1px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+button {
+    padding: 10px;
+    background-color: #f9ba60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    background: #e68a2e;
+}
+
+.anotherchild{
+    width: 30rem;
+    padding-left: 27rem;
+}
+
+#guardian-message,
+#child-message {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.error-message {
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px;
+    padding-right: 1px;
+}
+
+.message{
+    width: 100%;
+    color: var(--orange);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px;
+    padding-right: 1px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px; 
+    position: relative;
+}
+
